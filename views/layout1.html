@@ -1,3 +1,5 @@
+{{extend 'layout.html'}}
+
 <!DOCTYPE html>
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="{{=T.accepted_language or 'en'}}"> <!--<![endif]-->
   <head>
@@ -32,7 +34,7 @@
     {{include 'web2py_ajax.html'}} <!-- this includes jquery.js, calendar.js/.css and web2py.js -->
     {{block head}}{{end}}
   </head>
-  <body >
+  <body  style="background: none;">
     <div class="w2p_flash alert alert-dismissable" >{{=response.flash or ''}}</div>
     <!-- Navbar ======================================= -->
     <nav class="navbar navbar-light navbar-expand-md bg-faded bg-dark navbar-dark justify-content-center" >
@@ -43,16 +45,16 @@
          <ul class="navbar-nav w-100 justify-content-center" >
          
           <li class="nav-item ">
-            <a class="nav-link" href="/SWE/SWE/home" style="font-size: 18px;font-family: 'Lucida Console';padding-left: 100px;">Home</a>
+            <a class="nav-link" href="/SWE/SWE/home" style="font-size: 18px;font-family: 'Lucida Console';padding-left: 100px; border-right: 1px solid white;">Home</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="/SWE/SWE/showissue"style="font-size: 18px;font-family: 'Lucida Console';">show issue</a>
+            <a class="nav-link" href="/SWE/SWE/showissue"style="font-size: 18px;font-family: 'Lucida Console'; border-right: 1px solid white;">Show Issue</a>
           </li>
           <li class="nav-item ">
-           <a class="nav-link" href="/SWE/SWE/report_an_issue "style=font-size: 18px;font-family:'Lucida Console';" >Report an Issue </a>
+           <a class="nav-link" href="/SWE/SWE/report_an_issue "style=font-size: 18px;font-family: 'Lucida Console'; border-right: 1px solid white;">Report an Issue </a>
          </li>
           <li class="nav-item ">
-           <a class="nav-link" href="/SWE/SWE/massege" style="font-size: 18px;font-family: 'Lucida Console';">massege</a>
+           <a class="nav-link" href="/SWE/SWE/massege" style="font-size: 18px;font-family: 'Lucida Console'; border-left: 1px solid white;">Massege</a>
 
           {{pass}}
           {{pass}}

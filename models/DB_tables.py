@@ -1,6 +1,6 @@
 db = DAL('mysql://root:ALAAALAAALAA@localhost/swe')
 
-# db.define_table('issue',
+# db.define_table('issues',
 #     Field('Title' , 'string'),
 #     Field('discription','string'),
 #     Field('sbmitter','integer'),

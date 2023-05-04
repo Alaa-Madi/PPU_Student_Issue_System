@@ -1,3 +1,5 @@
+{{extend 'layout.html'}}
+
 <!DOCTYPE html>
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="{{=T.accepted_language or 'en'}}"> <!--<![endif]-->
   <head>
@@ -32,37 +34,36 @@
     {{include 'web2py_ajax.html'}} <!-- this includes jquery.js, calendar.js/.css and web2py.js -->
     {{block head}}{{end}}
   </head>
-  <body >
+  <body style="background: none; ">
     <div class="w2p_flash alert alert-dismissable" >{{=response.flash or ''}}</div>
     <!-- Navbar ======================================= -->
-    <nav class="navbar navbar-light navbar-expand-md bg-faded bg-dark navbar-dark justify-content-center" >
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-light navbar-expand-md bg-faded bg-dark navbar-dark justify-content-center" style="border-radius: 7px;">
+       <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
-       </button>
-       <div class="navbar-collapse collapse w-100" id="navbarNavDropdown" >
-         <ul class="navbar-nav w-100 justify-content-center" >
-         
-          <li class="nav-item ">
-            <a class="nav-link" href="/SWE/SWE/assign_issue" style="font-size: 18px;font-family: 'Lucida Console';padding-left: 100px;">Assigne Issue</a>
+       </button> -->
+       <div class="navbar-collapse collapse w-100" id="navbarNavDropdown" style="display: flex;">
+         <ul class="navbar-nav w-100 justify-content-center"  >
+          <li class="nav-item " style="    border-right: 1px solid white;" >
+            <a class="nav-link" href="/SWE/SWE/assign_issue" style="font-size: 18px;font-family: 'Lucida Console';padding-left: 10px; margin-left: 0;padding: 10;"> Assign Issue</a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="/SWE/SWE/View_Reported_Issue"style="font-size: 18px;font-family: 'Lucida Console';">View Reported Issue</a>
+          <li class="nav-item " style="    border-right: 1px solid white;">
+            <a class="nav-link" href="/SWE/SWE/View_Reported_Issue"style="font-size: 18px;font-family: 'Lucida Console'; padding: 10px;">View Reported Issues</a>
           </li>
-          <li class="nav-item ">
+          <li class="nav-item " style="    border-right: 1px solid white;">
            <a class="nav-link" href="/SWE/SWE/Decision "style=font-size: 18px;font-family: 'Lucida Console';"> Decision </a>
          </li>
-          <li class="nav-item ">
+          <li class="nav-item " style="    border-right: 1px solid white;">
            <a class="nav-link" href="/SWE/SWE/Genarate_Report" style="font-size: 18px;font-family: 'Lucida Console';">Genarate Report</a>
-           <li class="nav-item ">
-             <a class="nav-link" href="/SWE/SWE/massege" style="font-size: 18px;font-family: 'Lucida Console';padding-right: 900px;">massege</a>
+           <li class="nav-item "style="">
+             <a class="nav-link" href="/SWE/SWE/massege" style="font-size: 18px;font-family: 'Lucida Console';padding-right: 900px;padding: 10px;">Massege</a>
            </li>
           {{pass}}
           {{pass}}
         </ul>
-         <form class="form-inline my-2 my-lg-0">
-             <input class="form-control mr-sm-2" type="text" placeholder="Search">
-         </form>
-        {{if 'auth' in globals():}}
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      </form>
+        <!-- {{if 'auth' in globals():}}
         <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -87,7 +88,7 @@
             </div>
           </li>
         </ul>
-        {{pass}}
+        {{pass}} -->
       </div>
     </nav>
 

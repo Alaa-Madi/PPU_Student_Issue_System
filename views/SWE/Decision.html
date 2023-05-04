@@ -1,0 +1,63 @@
+{{extend 'layout2.html'}}
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">title</th>
+        <th scope="col">status</th>
+        <th scope="col">head_ID</th>
+        <th scope="col">student_ID</th>
+        <th scope="col">advisor_ID</th>
+        <th scope="col">Decision</th>
+
+
+  
+      
+      </tr>
+    </thead>
+    <tbody>
+      {{for issue in issue:}}
+
+      <tr>
+        <td>{{=issue['Title']}}</td>
+        <td>{{=issue['status']}}</td>
+        <td>{{=issue['head_ID']}}</td>
+        <td>{{=issue['advisor_ID']}}</td>
+        <td>{{=issue['student_ID']}}</td>
+        <td><input type="text"></td>
+        <td><button>submit</button></td>
+  
+      </tr>
+      {{pass}}
+    </tbody>
+  </table>
+  <style>
+    button {
+  background-color: #0d1f33; 
+  border: none; 
+  color: white; 
+  padding: 12px 24px; 
+  text-align: center;
+  text-decoration: none; 
+  display: inline-block;
+  font-size: 16px; 
+  border-radius: 4px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+
+button:hover {
+  background-color: #386f3a;
+}
+
+
+th{
+    background-color: #0d1f33;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 1em;
+  text-align: center;
+}
+ 
+  </style>

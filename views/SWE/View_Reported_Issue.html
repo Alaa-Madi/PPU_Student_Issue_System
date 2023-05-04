@@ -1,0 +1,100 @@
+{{extend 'layout2.html'}}
+{{extend 'layout3.html'}}
+
+
+<div class="table-wrapper">
+    <table class="fl-table">
+      <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">title</th>
+            <th scope="col">discription</th>
+            <th scope="col">submitter</th>
+            <th scope="col">assigne</th>
+            <th scope="col">status</th>
+            <th scope="col">created date</th>
+            <th scope="col">priorty</th>
+            <th scope="col">head_id</th>
+            <th scope="col">advisor_id</th>
+            <th scope="col">student_id</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{for issue in issue:}}
+        <tr>
+            <td>{{=issue['ID']}}</td>
+            <td>{{=issue['Title']}}</td>
+            <td>{{=issue['discription']}}</td>
+            <td>{{=issue['submitter']}}</td>
+            <td>{{=issue['assigne']}}</td>
+            <td>{{=issue['status']}}</td>
+            <td>{{=issue['createdDate']}}</td>
+            <td>{{=issue['priority']}}</td>
+            <td>{{=issue['head_ID']}}</td>
+            <td>{{=issue['advisor_ID']}}</td>
+            <td>{{=issue['student_ID']}}</td>
+      
+        </tr>
+        {{pass}}
+      </tbody>
+    </table>
+  </div>
+  <style>
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.table-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fl-table {
+  border-collapse: collapse;
+  font-size: 1em;
+  width: 100%;
+}
+
+.fl-table th {
+  background-color: #0d1f33;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 1em;
+  text-align: center;
+}
+
+.fl-table td {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  padding: 1em;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .fl-table {
+    display: block;
+    overflow-x: auto;
+  }
+  .fl-table thead {
+    display: none;
+  }
+  .fl-table td,
+  .fl-table th {
+    display: block;
+    text-align: left;
+  }
+  .fl-table td {
+    border-bottom: 1px solid #dee2e6;
+    border-right: none;
+  }
+  .fl-table td:last-child {
+    border-bottom: none;
+  }
+}
+
+  </style>
+  

@@ -525,3 +525,109 @@ CREATE TABLE `issue`(
     `student_id` INTEGER,
     PRIMARY KEY (`id`)
 ) ENGINE=InnoDB CHARACTER SET utf8;
+timestamp: 2023-05-04T19:04:58.325088
+CREATE TABLE `issue`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `title` VARCHAR(512),
+    `discription` VARCHAR(512),
+    `sbmitter` INTEGER,
+    `assigne` INTEGER,
+    `status` INTEGER,
+    `createddate` DATE,
+    `priority` INTEGER,
+    `head_id` INTEGER,
+    `advisor_id` INTEGER,
+    `student_id` INTEGER,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+timestamp: 2023-05-04T19:05:45.737959
+CREATE TABLE `issue`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `title` VARCHAR(512),
+    `discription` VARCHAR(512),
+    `sbmitter` INTEGER,
+    `assigne` INTEGER,
+    `status` INTEGER,
+    `createddate` DATE,
+    `priority` INTEGER,
+    `head_id` INTEGER,
+    `advisor_id` INTEGER,
+    `student_id` INTEGER,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+timestamp: 2023-05-04T19:06:35.142082
+CREATE TABLE `issue`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `title` VARCHAR(512),
+    `discription` VARCHAR(512),
+    `sbmitter` INTEGER,
+    `assigne` INTEGER,
+    `status` INTEGER,
+    `createddate` DATE,
+    `priority` INTEGER,
+    `head_id` INTEGER,
+    `advisor_id` INTEGER,
+    `student_id` INTEGER,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+timestamp: 2023-05-04T19:07:17.348528
+CREATE TABLE `issue`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `title` VARCHAR(512),
+    `discription` VARCHAR(512),
+    `sbmitter` INTEGER,
+    `assigne` INTEGER,
+    `status` INTEGER,
+    `createddate` DATE,
+    `priority` INTEGER,
+    `head_id` INTEGER,
+    `advisor_id` INTEGER,
+    `student_id` INTEGER,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+timestamp: 2023-05-04T19:10:27.494796
+CREATE TABLE `issue`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `title` VARCHAR(512),
+    `discription` VARCHAR(512),
+    `sbmitter` INTEGER,
+    `assigne` INTEGER,
+    `status` INTEGER,
+    `createddate` DATE,
+    `priority` INTEGER,
+    `head_id` INTEGER,
+    `advisor_id` INTEGER,
+    `student_id` INTEGER,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+timestamp: 2023-05-04T19:17:19.580199
+CREATE TABLE `issue`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `title` VARCHAR(512),
+    `discription` VARCHAR(512),
+    `sbmitter` INTEGER,
+    `assigne` INTEGER,
+    `status` INTEGER,
+    `createddate` DATE,
+    `priority` INTEGER,
+    `head_id` INTEGER,
+    `advisor_id` INTEGER,
+    `student_id` INTEGER,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+timestamp: 2023-05-04T19:17:41.927232
+CREATE TABLE `issues`(
+    `id` INT AUTO_INCREMENT NOT NULL,
+    `title` VARCHAR(512),
+    `discription` VARCHAR(512),
+    `sbmitter` INTEGER,
+    `assigne` INTEGER,
+    `status` INTEGER,
+    `createddate` DATE,
+    `priority` INTEGER,
+    `head_id` INTEGER,
+    `advisor_id` INTEGER,
+    `student_id` INTEGER,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!

@@ -48,29 +48,23 @@ def showissue():
 def report_an_issue():
     return locals()
 
-# def report_an_issue1():
-#     # Retrieve form data
-#     title = request.vars.inputState
-#     description = request.vars.inputdesc
-#     submitter = request.vars.inputsub
-#     assignee = request.vars.inputsub1
-#     status = request.vars.status
-#     created_date = request.vars.inputdate
-#     priority = True if 'gridCheck' in request.vars else False
-#     head_id = request.vars.head_ID
-#     advisor_id = request.vars.advisor_ID
-#     student_id = request.vars.student_ID
-    
-#     # Insert form data into database
-#     db.issue.insert(title=title, description=description, submitter=submitter,
-#                        assignee=assignee, status=status, created_date=created_date,
-#                        priority=priority, head_id=head_id, advisor_id=advisor_id,
-#                        student_id=student_id)
-    
-#     # Redirect to a page indicating success
-#     redirect(URL('home.html'))
-
-    # messages.py controller
 
 def massege():
     return locals()
+
+def assign_issue():
+    return locals()
+
+def Decision():
+    issue = db.executesql("SELECT Title,status,head_ID,student_ID, advisor_ID  FROM issue WHERE status = 'wait'", as_dict=True)
+    return dict(issue=issue)
+
+def Genarate_Report():
+    return locals()
+
+def Make_Decision():
+    return locals()
+
+def View_Reported_Issue():
+    issue = db.executesql("SELECT * FROM issue WHERE status = 'done'", as_dict=True)
+    return dict(issue=issue)

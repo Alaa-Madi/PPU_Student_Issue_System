@@ -1,3 +1,5 @@
+{{extend 'layout.html'}}
+
 <!DOCTYPE html>
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="{{=T.accepted_language or 'en'}}"> <!--<![endif]-->
   <head>
@@ -32,7 +34,7 @@
     {{include 'web2py_ajax.html'}} <!-- this includes jquery.js, calendar.js/.css and web2py.js -->
     {{block head}}{{end}}
   </head>
-  <body >
+  <body  style="background: none;">
     <div class="w2p_flash alert alert-dismissable" >{{=response.flash or ''}}</div>
     <!-- Navbar ======================================= -->
     <nav class="navbar navbar-light navbar-expand-md bg-faded bg-dark navbar-dark justify-content-center" >
@@ -42,14 +44,14 @@
        <div class="navbar-collapse collapse w-100" id="navbarNavDropdown" >
          <ul class="navbar-nav w-100 justify-content-center" >
          
-          <li class="nav-item ">
+          <li class="nav-item " style="    border-right: 1px solid white;">
             <a class="nav-link" href="/SWE/SWE/View_Reported_Issue" style="font-size: 18px;font-family: 'Lucida Console';padding-left: 100px;">View Reported Issue</a>
           </li>
-          <li class="nav-item ">
+          <li class="nav-item " style="    border-right: 1px solid white;">
             <a class="nav-link" href="/SWE/SWE/Make_Decision"style="font-size: 18px;font-family: 'Lucida Console';">Make Decision</a>
           </li>
           <li class="nav-item ">
-           <a class="nav-link" href="/SWE/SWE/massege"style=font-size: 18px;font-family: 'Lucida Console';">message </a>
+           <a class="nav-link" href="/SWE/SWE/massege"style=font-size: 18px;font-family: 'Lucida Console';">Message </a>
          </li>
           {{pass}}
           {{pass}}
