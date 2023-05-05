@@ -6,33 +6,22 @@
     <table class="fl-table">
       <thead>
         <tr>
-            <th scope="col">Id</th>
-            <th scope="col">title</th>
-            <th scope="col">discription</th>
-            <th scope="col">submitter</th>
-            <th scope="col">assigne</th>
-            <th scope="col">status</th>
-            <th scope="col">created date</th>
-            <th scope="col">priorty</th>
-            <th scope="col">head_id</th>
-            <th scope="col">advisor_id</th>
-            <th scope="col">student_id</th>
+          <th scope="col">Issue Id</th>
+          <th scope="col">Issue Name</th>
+          <th scope="col">Head Id</th>
+          <th scope="col">Advisor Id</th>
+          <th scope="col">Student Id</th>
         </tr>
       </thead>
       <tbody>
         {{for issue in issue:}}
         <tr>
-            <td>{{=issue['ID']}}</td>
-            <td>{{=issue['Title']}}</td>
-            <td>{{=issue['discription']}}</td>
-            <td>{{=issue['submitter']}}</td>
-            <td>{{=issue['assigne']}}</td>
-            <td>{{=issue['status']}}</td>
-            <td>{{=issue['createdDate']}}</td>
-            <td>{{=issue['priority']}}</td>
+            <td></td>
+            <td></td>
             <td>{{=issue['head_ID']}}</td>
             <td>{{=issue['advisor_ID']}}</td>
             <td>{{=issue['student_ID']}}</td>
+
       
         </tr>
         {{pass}}
@@ -94,6 +83,7 @@ html, body {
   .fl-table td:last-child {
     border-bottom: none;
   }
+
 }
 
   </style>
